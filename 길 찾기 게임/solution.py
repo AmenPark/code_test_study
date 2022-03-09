@@ -59,8 +59,8 @@ def solution(nodeinfo):
     infos = [[nodeinfo[i][0],nodeinfo[i][1],i+1]for i in range(len(nodeinfo))]
     infos.sort(key = lambda x:[x[1],-x[0]],reverse = True)
     tree = Tree()
-    for e,info in enumerate(infos):  #x,y,i
-        tree.get_node(Node(info[0],info[1],info[2]))
+    for e,(x,y,i) in enumerate(infos):  #x,y,i
+        tree.get_node(Node(x,y,i))
     tree.get_front(answer[0])
     tree.get_back(answer[1])
     return answer

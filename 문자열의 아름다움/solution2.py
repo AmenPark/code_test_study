@@ -47,7 +47,7 @@ def solution(s):
             before_key = chr_conti
             # SUM<(k-i)**2 - (k-i) = k**2 - 2ki + i**2 - k + i> for i = 0,...,?
             var += get_num(chr_num,conti_ctnum,deltakey)            
-            chr_num -= conti_ctnum
+            chr_num -= conti_ctnum * deltakey
             conti_ctnum -=  conti_num
         answer -= var
             

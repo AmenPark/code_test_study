@@ -6,7 +6,7 @@ def get_num(k, i,  iternum):
     var += iternum * (iternum - 1) * (2* iternum - 1) // 6 * i * i
     return var // 2       # 나누기 2는 기본으로 했어야 했던 것.
 
-def solutionb(s):
+def solution(s):
     N = len(s)
     # answer = SUM<N * (N+1) // 2> for N = 1~N
     answer = ((N * (N-1) * (2*N - 1))//6 + N * (N-1) // 2)//2
